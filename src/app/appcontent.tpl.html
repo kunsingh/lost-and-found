@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="page-header">
+        <ul class="nav  nav-pills pull-right" role="tablist">
+            <button  class="btn btn-default" ui-route="/home"><a ui-sref="app.search">Home</a></button>
+            <button  class="btn btn-default" ui-route="/about"><a ui-sref="app.about">About</a></button>
+
+        </ul>
+
+        <a href="">
+            <img src="../assets/images/lost-and-found.png" height="40px"/>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+
+    <div>
+        <div class="col-md-2 main-col"></div>
+
+        <div class="col-md-8 main-col">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li ui-route="/search" ng-click="selectTab('search')" ng-class="{'active-nav':selectedTab === 'search'}">
+                                <a ui-sref="app.search" id="searchLink">
+                                    <i class="fa fa-search"></i>
+                                    Search
+                                </a>
+                            </li>
+                            <li class="ng-scope nav-arrow">
+                                <div class="arrow">
+
+                                </div>
+                            </li>
+                            <li class="ng-scope nav-arrow">
+                                <div class="arrow">
+
+                                </div>
+                            </li>
+                            <li ui-route="/lostandfound" ng-click="selectTab('lost')" ng-class="{'active-nav':selectedTab === 'lost'}">
+                                <a ui-sref="#/lostandfound">
+                                    <i class="fa fa-frown-o"></i>
+                                    Lost
+                                </a>
+                            </li>
+                            <li class="ng-scope nav-arrow">
+                                <div class="arrow">
+
+                                </div>
+                            </li>
+                            <li class="ng-scope nav-arrow">
+                                <div class="arrow">
+
+                                </div>
+                            </li>
+
+                            <li ui-route="/lostandfound" ng-click="selectTab('found')" ng-class="{'active-nav':selectedTab === 'found'}">
+                                <a ui-sref="#/lostandfound">
+                                    <i class="fa fa-question"></i>
+                                    Found
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container" ui-view></div>
+
+
+            <footer class="footer">
+                <div class="container">
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</div>

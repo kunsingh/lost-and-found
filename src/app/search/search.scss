@@ -1,0 +1,143 @@
+
+$view-medium-gray: #ccc;
+$view-light-gray: #ddd;
+$view-lighter-gray: #ebebeb;
+$manually-added-item-color: #000000;          // #428bca is the original Boilerplate theme
+$manually-added-item-color-hover: #6f7072;    // #2a6496 is the original Boilerplate theme
+
+
+.predef-terms {
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 1px solid $view-medium-gray;
+  margin-top: 12px;
+}
+
+.progress {
+  /*   font-weight: bold;*/
+  color: "#000000";    // color is defined in main.less
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.ng-table {
+  border: 1px solid #000;
+}
+.ng-table-rowselected tr {
+  cursor: pointer;
+}
+.selected {
+  background-color: $view-medium-gray;
+}
+.search-heading {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 120%;
+  -webkit-box-sizing: border-box;
+}
+.search-result-heading {
+  padding-top: 18px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+}
+
+.search-heading-top-of-container {
+  @extend .search-heading;
+  padding-top: 0px;
+}
+
+.plain {
+  font-weight: normal;
+}
+
+.align-left {
+  padding-left: 0px;
+}
+
+.query-ctr {
+ font-weight: bold;
+ font-size: 100%;
+}
+
+.selected-query {
+  background: $view-lighter-gray;
+}
+
+.query:hover {
+  background: $view-light-gray;
+}
+
+.right {
+  float: right;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.completed-queries {
+  margin-top: 36px;
+  border-top: 4px dashed $view-medium-gray;
+  padding-top: 18px;
+}
+
+$split-padding: 120px;
+
+.split-left {
+  //padding-right: 50px;
+  border-right: 4px dashed $view-medium-gray;
+}
+.split-bottom {
+  padding-top: $split-padding;
+  border-bottom: 4px dashed $view-medium-gray;
+}
+.split-right {
+  padding-left:20px;
+}
+
+.no-horizontal-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+$thick-border-width: 2px;
+
+.thick-border-input-element {
+  border-color: "#6f7072";          // color is defined in main.less
+  border-width: $thick-border-width;
+}
+
+.thick-border-button-attached {
+ @extend  .thick-border-input-element;
+  border-width: $thick-border-width $thick-border-width $thick-border-width 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main-field {
+  border-color: "#000000";     // color is defined in main.less
+}
+.table tbody {
+  text-decoration-color: black;
+}
+
+.manually-added-item {
+  color: $manually-added-item-color;
+}
+
+.manually-added-item:hover {
+  color: $manually-added-item-color-hover;
+}
+
+.remove-icon-clickable {
+  padding-top: 2px;
+}
+
+a.remove-icon-clickable:hover {
+  text-decoration: none;
+}
+

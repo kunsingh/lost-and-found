@@ -1,0 +1,49 @@
+<div>
+    <div class="modal-header">
+        <h3 class="modal-title">Details</h3>
+    </div>
+
+    <div class="modal-body">
+        <div class="search-heading">{{isLost}} Item details</div>
+        <ul>
+            <li>
+                <b> Item Category: </b> {{ details.categoryName }}
+            </li>
+            <li>
+                <b>Item Name: </b> {{ details.subCategoryName }}
+            </li>
+            <li>
+                <b> Date {{isLost}}: </b> {{ details.date }}
+            </li>
+            <li>
+                <b> Place: </b> {{ details.place }}
+            </li>
+            <li>
+                <b> Country: </b> {{ details.countryCode }}
+            </li>
+            <li>
+                <b> Item Description: </b> {{ details.description }}
+            </li>
+        </ul>
+        <div class="search-heading">Reported By</div>
+        <ul>
+            <li>
+                <b> Name: </b> {{  }}
+            </li>
+            <li>
+                <b>Contact No.: </b> {{ }}
+            </li>
+            <li>
+                <b> Email: </b> {{  }}
+            </li>
+            <li>
+                <b> Address: </b> {{  }}
+            </li>
+          </ul>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">OK</button>
+        <!--<button class="btn btn-warning" ng-click="cancel()">Cancel</button>-->
+    </div>
+</div>
